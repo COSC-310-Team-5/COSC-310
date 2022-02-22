@@ -12,7 +12,7 @@ class DatabaseToList:
         for i in fileOfLines:
             list = i.split(" @ ")
             list[1] = list[1].replace("\n", "")
-            databaseList.append([list[0].lower(), list[1].lower()]) #appends the string to a new list
+            databaseList.append([list[0], list[1]]) #appends the string to a new list
         f.close()
         
         return databaseList
