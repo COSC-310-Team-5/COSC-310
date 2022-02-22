@@ -1,4 +1,4 @@
-from random import random
+from random import randint
 
 class GreetMessage:
     def greetMessage():
@@ -7,5 +7,7 @@ class GreetMessage:
         greetMessages.append("How do you do?")
         greetMessages.append("Hi!")
         greetMessages.append("Good day.")
-        randomMessage = round(random()*5)
+        randomMessage = randint(0,3)
         return greetMessages[randomMessage]
+
+print(GreetMessage.greetMessage())
