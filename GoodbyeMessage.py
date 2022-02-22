@@ -7,5 +7,5 @@ class GoodbyeMessage:
         goodbyeMessages.append("See you next time.")
         goodbyeMessages.append("Bye bye.")
         goodbyeMessages.append("Until next time.")
-        randomMessage = randint(0,4)
+        randomMessage = randint(0,3)
         return goodbyeMessages[randomMessage]
