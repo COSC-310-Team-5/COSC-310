@@ -1,7 +1,7 @@
 class SimilarityOfTwoSentences:
     def sentence_similarity(userIn, prompt):
-        userSplit = userIn.lower().split()
-        promptSplit = prompt.lower().split()
+        userSplit = userIn.split()
+        promptSplit = prompt.split()
         count = 0
 
         if (len(userSplit) <= len(promptSplit)):
