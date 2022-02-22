@@ -9,5 +9,3 @@ class GreetMessage:
         greetMessages.append("Good day.")
         randomMessage = randint(0,3)
         return greetMessages[randomMessage]
-
-print(GreetMessage.greetMessage())
