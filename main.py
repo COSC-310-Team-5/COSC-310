@@ -20,7 +20,7 @@ class Main:
             print("Please try again, remember to use only letters.")
             userInputSentence = input("User: ")
         if(len(userInputSentence.split())<=2):
-            print(GoodbyeMessage.goodbyeMessage())
+            print(f"Bot: {GoodbyeMessage.goodbyeMessage()}")
             userWantsToTalk = False
         else:
             botAnswer,correctnessValue = BotRespons.bot_respons(userInputSentence,databaseInList)
