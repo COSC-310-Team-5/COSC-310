@@ -6,27 +6,26 @@ from BotRespons import BotRespons
 from DatabaseToList import DatabaseToList
 
 class Main:
-    print(GreetMessage.greetMessage())
-    userInput = input()
-    while(not userInput.replace(' ','').isalpha()):
+    print(f"Bot: {GreetMessage.greetMessage()}")
+    userInput = input("User: ")
+    while((not userInput.replace(' ','').isalpha()) or (len(userInput.split()) == (not 1)) ):
         print("Please try again, remember to use only letters.")
-        userInput = input()
-    print(GettingStarted.gettingStarted())
+        userInput = input("User: ")
+    print(f"Bot: {GettingStarted.gettingStarted()}")
     userWantsToTalk = True
     databaseInList = DatabaseToList.database_to_list()
     while(userWantsToTalk):        
-        userInputSentence = input()
-        while(not userInputSentence.replace(' ','').isalpha()):
+        userInputSentence = input("User: ")
+        while((not userInputSentence.replace(' ','').isalpha()) or (len(userInputSentence) == 0) ):
             print("Please try again, remember to use only letters.")
-            userInputSentence = input()
-        if(len(userInputSentence)<=2):
+            userInputSentence = input("User: ")
+        if(len(userInputSentence.split())<=2):
             print(GoodbyeMessage.goodbyeMessage())
             userWantsToTalk = False
         else:
             botAnswer,correctnessValue = BotRespons.bot_respons(userInputSentence,databaseInList)
-            if correctnessValue > 1:
-                print("I'm sorry, that seems a little complex for me. Could you say it a little more simply please?")
-            elif correctnessValue <= 0:
-                print("I'm sorry, I couldn't understand. Could you say that again please?")
+            if correctnessValue > 1 or correctnessValue <= (1/3):
+                print("Bot: I'm sorry, that seems a little complex for me. Could you say it a little more simply please?")
             else:
-                print(botAnswer)
+                print(f"Bot: {botAnswer}")
+            correctnessValue = 0
