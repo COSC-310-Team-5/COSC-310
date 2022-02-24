@@ -77,7 +77,7 @@ I want to go to a gym @ That is great. Plus, it is good for your body. What else
 I want to exercise @ That is great. Plus, it is good for your body. What else would you like to talk about?
 I want to start going to the gym @ That is great. Plus, it is good for your body. What else would you like to talk about?
 I want to start exercising @ That is great. Plus, it is good for your body. What else would you like to talk about?
- I feel alone @ I am sorry to hear that, why do you feel alone?
+I feel alone @ I am sorry to hear that, why do you feel alone?
 I want friends @ I am sorry to hear that, why do you not have any friends?
 I feel upset @ I am sorry to hear that, why do you feel upset?
 How much longer do I have to fake my smile? @ Why do you feel you have to fake a smile?
