@@ -1,9 +1,8 @@
-# Intro
-This project is a conversational agent that carries on a conversation with the user by responding to user’s input with prompts and questions. The role of the conversational agent is a therapist that specializes in loneliness, so as you are using this program, try to stay in the mindset of a patient at a therapist’s office.
+# Introduction
+This project's objective is to create a conversational agent that carries on a conversation with the user by responding to user’s input with prompts and questions. The role of the conversational agent that we have created is to act as a therapist that specializes in loneliness. So as you are using this program, try to stay in the mindset of a patient at a therapist’s office to bring out the most of the program's functionality.
 
 # How to run
-Running the code is very simple, clone the github repository then run the main class.
-
+Running the code is very simple: clone the Github repository, and then run the Main class.
 
 # Explanations of classes/files:
 - **GreetMessage**:
