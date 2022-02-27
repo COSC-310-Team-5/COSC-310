@@ -5,6 +5,7 @@ This project's objective is to create a conversational agent that carries on a c
 Running the code is very simple: clone the Github repository, and then run the Main class.
 
 # Explanations of classes/files:
+![](documentation/program_flowchart.jpg)
 - **GreetMessage**:
             GreetMessage is a class containing a single method named greet_message(). greet_message() is a function that takes in no parameters. The function has a list with 4 pre-determined strings, greeting messages, such as "Hello", "Hi!', etc. The function randomly generates a number from 0 to 3, "num" (Use a different name, a more descriptive name). Then, the function returns the string at index "num".
             
